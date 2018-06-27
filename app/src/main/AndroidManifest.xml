@@ -23,11 +23,12 @@
             </intent-filter>
         </activity>
         <receiver
-            android:name=".broadcast.receiver.CustomBroadcastReceiverOne"
+            android:name=".CustomBroadcastReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.dev2qa.example.broadcast.activity.CUSTOM_BROADCAST" />
+                <action android:name="test" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
 
